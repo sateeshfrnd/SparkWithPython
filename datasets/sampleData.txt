@@ -1,0 +1,9 @@
+101,user1,user1@gmail.com,city1
+102,user2,user2@gmail.com,city2
+103,user3,user3@gmail.com,city1
+104,user4,user4@gmail.com,city3
+105,user5,user5@gmail.com,city2
+106,user6,user6@gmail.com,city4
+107,user7,user7@gmail.com,city3
+108,user8,user8@gmail.com,city5
+109,user8,user9@gmail.com,city6
