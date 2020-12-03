@@ -1,4 +1,5 @@
 import sys
+
 import findspark
 
 findspark.init()
@@ -6,6 +7,7 @@ findspark.init()
 from pyspark import SparkConf
 from pyspark.sql import *
 from collections import namedtuple
+
 
 def main(fileName):
     print(f"Filename = {fileName}")
@@ -39,26 +41,11 @@ def main(fileName):
 
     spark.stop()
 
+
 if __name__ == "__main__":
-    # conf = SparkConf()
-    # conf.set("spark.app.name", "PySpark")
-    # conf.set("spark.master", "local[3]")
-    #
-    # spark = (
-    #     SparkSession.builder
-    #         .config(conf=conf)
-    #         .getOrCreate()
-    # )
-    #
-    # print("Spark Version = ",spark.version)
-    # print("Spark Configurations : ")
-    # get_conf = spark.sparkContext.getConf()
-    # print(get_conf.toDebugString())
 
     if len(sys.argv) != 2:
         print("Error: Pass argument as <filename>")
         sys.exit(-1)
     else:
         main(sys.argv[1])
-
-
